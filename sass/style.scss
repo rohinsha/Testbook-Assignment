@@ -246,7 +246,7 @@ img{
 }
 .topbar {
 	@include padding(26px, 7px, 26px, 40px);
-	@include respond-below(sm) {
+	@include respond-below(md) {
 		@include padding(26px, 28px, 26px, 40px);
 	}
 	height: 90px;
@@ -267,7 +267,7 @@ img{
 	}
 }
 .top-nav-items {
-	@include respond-below(sm) {
+	@include respond-below(md) {
 		margin-top: 5px;
 	}
 	float: right;
@@ -277,7 +277,7 @@ img{
 	li {
 		display: inline-block;
 		a {
-			@include respond-below(sm) {
+			@include respond-below(md) {
 				margin-right: 10px;
 			}
 			color: #939EAD;
@@ -600,8 +600,7 @@ img{
 
 .mobile-user-picture {
 	@include respond-below(sm) {
-		width: 150px;
-		height: 150px;
+		width: 100%;
 	}
 	@include respond-below(md) {
 		display: block;
