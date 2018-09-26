@@ -1,0 +1,87 @@
+$font-helvetica: (
+  stack: "Helvetica, sans-serif",
+  
+	x-small: (
+		font-size: 11,
+		line-height: 16
+	),
+
+	small: (
+		font-size: 14,
+		line-height: 18
+	),
+
+	base: (
+		font-size: 16,
+		line-height: 18
+	),
+  
+	mid: (
+	    font-size: 20,
+	    line-height: 17
+	),
+
+	mid-large: (
+		font-size: 30,
+		line-height: 26
+	),
+
+	large: (
+		font-size: 37,
+		line-height: 35
+	),
+
+	x-large: (
+		font-size: 52,
+		line-height: 40
+	)
+);
+
+$font-verdana: (
+    stack: "Verdana, sans-serif", 
+  
+    x-small: (
+		  font-size: 12,
+  		line-height: 16
+    )
+ );
+
+$font-default: $font-helvetica;
+
+
+
+// FONTSET FUNCTIONS
+// This function is intended to be called by other functions and can be used to get information from the Sass list above. The $feature can be any key from the Sass list such as line-height or font-size.
+@function _fontset-feature($feature, $family:$font-default, $set: 'base'){
+    $result: map-get(map-get($family, $set), $feature);
+    @return ($result * 1px);
+}
+
+// Sets the family from the stack key in a Sass list
+@function fontset-family($family) {
+    $result: map-get($family, stack);
+    @return unquote($result);
+}
+
+// FONT-SIZE + LINE-HEIGHT FUNCTIONS
+// These functions return the font-size or line-height depending on the font-family list. To avoid duplication these functions call the fontset-feature function above.
+
+@function calc-font-size($set, $family:$font-default) {
+    @return _fontset-feature(font-size, $family, $set);
+}
+
+@function calc-line-height($set, $family:$font-default) {
+    @return _fontset-feature(line-height, $family,  $set);
+}
+
+// FONT-SCALE MIXIN
+// Applies the functions above into a mixin so that we can set font-size and line-height at the same time.
+// If there is a font-family set there 
+// Example: @include font-scale(small, $font-verdana);
+@mixin font-scale ($font-size, $family:$font-default, $line-height:$font-size) {
+    font-size: calc-font-size($font-size, $family);
+    line-height: calc-line-height($line-height, $family);
+    @if $family != $font-default {
+        font-family: fontset-family($family);
+    }
+}

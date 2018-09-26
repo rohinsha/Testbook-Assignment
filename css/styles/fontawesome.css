@@ -1,0 +1,55 @@
+/*
+Error: File to import not found or unreadable: core.
+        on line 7 of sass/styles/fontawesome.scss
+
+2:  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
+3:  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+4:  *\/
+5: @import 'variables';
+6: @import 'mixins';
+7: @import 'core';
+8: @import 'larger';
+9: @import 'fixed-width';
+10: @import 'list';
+11: @import 'bordered-pulled';
+12: @import 'animated';
+
+Backtrace:
+sass/styles/fontawesome.scss:7
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:290:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+C:/Ruby23-x64/bin/sass:22:in `load'
+C:/Ruby23-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: core.\A         on line 7 of sass/styles/fontawesome.scss\A \A 2:  * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com\A 3:  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)\A 4:  */\A 5: @import 'variables';\A 6: @import 'mixins';\A 7: @import 'core';\A 8: @import 'larger';\A 9: @import 'fixed-width';\A 10: @import 'list';\A 11: @import 'bordered-pulled';\A 12: @import 'animated';"; }
